@@ -1,0 +1,174 @@
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+
+* { 
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    font-size: 62.5%;
+}
+
+body{
+    display: inline-block;
+    text-align: center;
+    background-color: hsl(0, 100%, 73%);
+    background-image: url(./images/bg-intro-desktop.png);
+    background-size: 100%;
+    color:white;
+}
+
+#wrap{
+    display: inline-block;
+    height:auto;
+    padding-bottom:20px;
+}
+
+/*
+vh, vw 사용방법 
+https://taimouse.tistory.com/8
+
+rem 사용방법
+https://nykim.work/85
+*/
+
+#left{
+    min-height: 100%;
+    text-align: left;
+    margin-left:10%;
+    margin-right:5%;
+    width: 35%;
+    height:100%;
+    float:left;
+}
+
+#title{
+    margin-top:250px;
+    font-size: 5.4rem;
+    font-weight: 700;
+}
+
+
+#explain{
+    margin-top:10px;
+    font-size: 1.6rem;
+}
+
+
+#right{
+    min-height: 100%;
+    margin-right:10%;
+    margin-left:5%;
+    width: 35%;
+    height:100%;
+    float:right;
+}
+
+#try{
+    height: 50px;
+    margin-top:80px;
+    padding-top: 25px;
+    border-radius: 15px;
+    background-color:hsl(248, 32%, 49%);
+    color:white;
+    font-size: 2rem;
+    box-shadow: 0px 8px hsla(0, 0%, 0%, 0.1);
+    /*box shadow 인자
+    https://www.codingfactory.net/10628
+    */
+
+}
+ 
+#user{
+    display:block;
+    margin-top:30px; 
+    border-radius: 15px;
+    background-color: white;
+    padding: 50px 30px;
+    box-shadow: 0px 8px hsla(0, 0%, 0%, 0.1);
+    font-size: 1.6rem;
+}
+
+input{
+    font-size: 1.6rem;
+}
+
+input::placeholder{
+
+    font-size: 1.6rem;
+}
+
+#blank{
+    box-sizing: border-box;
+    height:50px;
+    width:100%;
+    border:1px solid hsl(0, 0%, 70%);
+    border-radius: 5px;
+    padding-left:20px;
+    /*
+    padding 넣어도 element가 커지지 않게 하려면
+    box-sizing:border-box를 넣어야 함
+    border-box는 padding을 요소의 정해진 크기 안에서 처리함*/
+}
+
+.error{
+    text-align: left;
+    color:hsl(0, 100%, 74%);
+    margin-top: 3px;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+
+#submit{
+    height:50px;
+    border:none;
+    width: 100%;
+    border-radius: 25px;
+    background-color: hsl(248, 32%, 49%);
+    color:white;
+    font-size: 1.6rem;
+}
+
+#submit:hover{
+    background-color: hsl(246, 25%, 77%);
+}
+
+#terms{
+    margin-top: 10px;
+    color:hsl(0, 0%, 70%);
+}
+
+@media (max-width: 820px){
+    body{
+        text-align: center;
+        padding: 0vw 10vw;
+    }
+        
+    #title{
+        margin-top: 150px;
+    }
+
+    #left{
+        /* width: auto 에 관해
+        https://oursmalljoy.com/css-width-auto-height-auto-%EA%B8%B0%EB%B3%B8%EA%B0%9C%EB%85%90-%EC%9E%98%EB%AA%BB-%EC%83%9D%EA%B0%81%ED%95%98%EA%B3%A0-%EC%9E%88%EB%8A%94-%EA%B2%83%EB%93%A4/
+        */
+        width:auto;
+        float:none;
+        margin-left:0;
+        margin-right:0;
+    }
+    #right{
+        width:auto;
+        float:none;
+        margin-left:0;
+        margin-right:0;
+    }
+}
+
+
+
+footer{
+    margin-top:10px;
+    position:relative;
+    transform:translateY(-100%);
+    text-align: center;
+}
+
+.attribution {font-size: 1.1rem;}
+.attribution a { color: hsl(228, 45%, 44%); }

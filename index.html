@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Intro component with sign up form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+
+  </style>
+</head>
+<body>
+  <div id="wrap">
+    <div id="left">
+    <div id="title">
+      배움은<br>모방으로부터ㅡ.
+    </div>
+    <div id="explain">
+      기초를 다지기 위해 수업을 듣는 것도 필수적이죠. 그러나,
+      진짜 실력을 좌우하는 것은 '개발자의 사고 방식'을 익히는 것입니다.
+      현업 개발자들의 코드 작성 방식을 실시간으로 살펴보세요.
+    </div>
+    </div>
+    <div id="right">
+    <div id="try">
+      7일간 무료 체험해보기
+      </div>
+    <div id="user">
+      <form id="userform">
+      <input id="blank" class="firstname" type="text" placeholder="First Name"
+      maxlength="20"/> 
+        <div class="error firstname_error"></div>
+      <input id="blank" class="lastname" type="text" placeholder="Last Name"
+      maxlength="20"/> 
+        <div class="error lastname_error"></div>
+      <input id="blank" class="email" type="text" placeholder="Email Address"
+      maxlength="20"/>
+        <div class="error email_error"></div>
+      <input id="blank" class="password" type="password" placeholder="Password"
+      maxlength="20"/>
+        <div class="error password_error"></div>
+
+      <button id="submit">무료 체험 신청 </button>
+
+      <div id="terms">
+        무료 체험 기간동안 본사의 서비스 약관에 동의합니다.    </div>
+      </form>
+    </div>
+    </div>
+  </div>
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/juurom">Juurom</a>.
+    </div>
+  </footer>
+</body>
+</html>
+
+
+
+<script src="https://code.jquery.com/jquery-latest.min.js"></script>
+<script src="formsubmit.js"></script>
